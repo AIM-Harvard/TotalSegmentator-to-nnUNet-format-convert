@@ -1,9 +1,9 @@
-# Convert TotalSegmentator Dataset to the nnUNet format
+# Convert TotalSegmentator dataset to the nnUNet format
 [TotalSegmentator](https://github.com/wasserth/TotalSegmentator) does not provide the scripts for preprocessing the dataset for nnUNet training (https://github.com/wasserth/TotalSegmentator/issues/124). This repo provides a way to do that. Supports nnUNet v2 only.
 
 ### Step 1 - Create the required environment
 `conda create -n ts_to_nnunet pandas jupyter simpleitk=2.0.2 -c simpleitk`
-This SimpleITK version is required as explained here https://github.com/wasserth/TotalSegmentator/issues/32 because of  https://github.com/InsightSoftwareConsortium/ITK/issues/3994
+SimpleITK v2.0.2 is required as explained [here](https://github.com/wasserth/TotalSegmentator/issues/32) due to an ITK [issue](https://github.com/InsightSoftwareConsortium/ITK/issues/3994).
 
 ### Step 2 - Download the TotalSegmentator dataset
 Download the TotalSegmentator dataset from [Zenodo](https://doi.org/10.5281/zenodo.6802613).
