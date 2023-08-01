@@ -4,7 +4,7 @@
 ---
 
 ### Step 1 - Create the required environment
-`conda create -n ts_to_nnunet pandas jupyter simpleitk=2.0.2 -c simpleitk`
+`conda create -n ts_to_nnunet pandas jupyter tqdm simpleitk=2.0.2 -c simpleitk`
 
 SimpleITK v2.0.2 is required as explained [here](https://github.com/wasserth/TotalSegmentator/issues/32) due to an ITK [issue](https://github.com/InsightSoftwareConsortium/ITK/issues/3994).
 
